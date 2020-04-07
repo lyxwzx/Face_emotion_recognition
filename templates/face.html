@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>实时动态表情检测</title>
+    <script type="text/javascript" src="static/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8"></script>
+<style type="text/css">
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #daffde;
+}
+.main {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .title h3{
+  font-size: 37px;
+  font-weight: 300;
+  margin: 0.8rem 0;
+  text-align:center;
+  background-color: #daffde;
+  height:80px;
+  width:100%;
+  /*margin:0px;*/
+}
+.main .title h5{
+  font-size: 28px;
+  font-weight: 300;
+  margin: 0.8rem 0;
+  text-align:center;
+  background-color: #daffde;
+  height:80px;
+  width:100%;
+  /*margin:0px;*/
+}
+#video {display: block;margin:1em auto;width:300px;height:300px;}
+#image-box {
+  position: relative;
+  width: auto;
+  /*width:100%;*/
+  /*float: left;*/
+  margin-bottom: 2rem;
+}
+#pred-result{
+    color:#000000;
+    font-size:30px;
+}
+</style>
+</head>
+
+
+<body>
+<div class="main">
+    <div class="title">
+    <br><br><br>
+    <h3>实时动态人脸表情检测</h3><br>
+    </div>
+
+    <video id="video" style =" width:400px;height:400px"  autoplay></video>
+    <div class="title"><br>
+         <h5>Predict Result:</h5>
+     </div>
+    <div id="image-box">
+        <div id="pred-result" ></div>
+    </div>
+
+
+{#    <div class="title"><br>#}
+{#       <h5>Expression prediction scale:</h5>#}
+{#    </div>#}
+{#    <div id="image-box">#}
+{#        <div id="pred-value" ></div>#}
+{#    </div>#}
+
+</div>
+</body>
+<footer>
+    <script src="{{ url_for('static',filename='real_time.js')}}"></script>
+</footer>
+</html>
