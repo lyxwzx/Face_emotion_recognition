@@ -16,7 +16,7 @@ You can download the project, configure the Flask and Python environment，run w
 
 
 
-# “Face_emotion_recognition”项目是我的本科毕业设计。
+“Face_emotion_recognition”项目是我的本科毕业设计。
 
 项目可以在图片和实时动态视频里实现人脸表情识别。
 
