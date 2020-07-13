@@ -12,7 +12,7 @@ Users can select pictures from local photo library files, or call the camera to 
 2. “real-time dynamic facial expression recognition” module:
 The images acquired per second are acquired through the video stream of the camera. Face detection and image preprocessing are carried out on the images per second using the Cascade classifier based on Haar features. Face expression recognition is carried out on the background of the system with the trained model.
 
-You can download the project, configure the Flask and Python environment，run with Pycharm.
+You can download the project, configure the Flask and Python environment，run with Pycharm,the entrance of project is app.py.
 
 
 
@@ -30,4 +30,4 @@ You can download the project, configure the Flask and Python environment，run w
 2. 实时动态表情识别模块呈现效果:
 通过调取摄像头视频流获取每秒采集的图像，对每秒的图像利用基于Haar特征的Cascade分类器进行人脸检测并进行图像预处理操作，系统后台用已经训练好的模型对其进行人脸表情识别，最后，将识别结果及预测值返回在界面上。
 
-您可以下载此项目，配置好项目环境，即可运行。
+您可以下载此项目，配置好项目环境，即可运行，文件入口：app.py。
